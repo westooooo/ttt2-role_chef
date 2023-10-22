@@ -59,13 +59,13 @@ if SERVER then
 				else
 					v:PrintMessage( HUD_PRINTCENTER, "Chef cooked for you!" )
 					local health = v:Health()
-          if health <= CookingMaxHealth then
-					  if health + CookingAddHealth <= CookingMaxHealth then
-						  v:SetHealth(health + CookingAddHealth)
-					  else
-						  v:SetHealth(CookingMaxHealth)
-					  end
-          end
+          				if health <= CookingMaxHealth then
+					  	if health + CookingAddHealth <= CookingMaxHealth then
+						  	v:SetHealth(health + CookingAddHealth)
+					  	else
+						 	 v:SetHealth(CookingMaxHealth)
+					 	 end
+          				end
 				end
 			end
 			ChefCooking(ply)
